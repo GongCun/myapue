@@ -1,0 +1,11 @@
+Cunteki-MacBook-Air:advanced_io gongcunjust$ ./sleep_us3 2000000
+^C
+sig_int starting
+
+sig_int finished
+usleep finished
+^C
+sig_int starting
+
+sig_int finished
+select failed: Interrupted system call

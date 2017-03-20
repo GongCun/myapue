@@ -1,0 +1,9 @@
+Cunteki-MacBook-Air:files_directories gongcunjust$ /usr/bin/time -p ./ftw3 /Users/gongcunjust >/dev/null
+real        12.23
+user         0.36
+sys          7.36
+Cunteki-MacBook-Air:files_directories gongcunjust$ /usr/bin/time -p ./ftw5 /Users/gongcunjust >/dev/null
+real        16.51
+user         0.45
+sys          8.66
+

@@ -1,0 +1,18 @@
+Cunteki-MacBook-Air:files_directories gongcunjust$ ls -l file1 file2
+-rw-r--r--  1 gongcunjust  staff  50 Nov 19 07:23 file1
+-rw-r--r--  1 gongcunjust  staff  50 Nov 19 07:23 file2
+
+Cunteki-MacBook-Air:files_directories gongcunjust$ ls -lu file1 file2
+-rw-r--r--  1 gongcunjust  staff  50 Nov 19 07:27 file1
+-rw-r--r--  1 gongcunjust  staff  50 Nov 19 08:04 file2
+
+# utime1 file1 file2
+Cunteki-MacBook-Air:files_directories gongcunjust$ ls -l file1 file2
+-rw-r--r--  1 gongcunjust  staff  0 Nov 19 07:23 file1
+-rw-r--r--  1 gongcunjust  staff  0 Nov 19 07:23 file2
+Cunteki-MacBook-Air:files_directories gongcunjust$ ls -lu file1 file2
+-rw-r--r--  1 gongcunjust  staff  0 Nov 19 07:27 file1
+-rw-r--r--  1 gongcunjust  staff  0 Nov 19 08:04 file2
+Cunteki-MacBook-Air:files_directories gongcunjust$ ls -lc file1 file2
+-rw-r--r--  1 gongcunjust  staff  0 Nov 19 08:08 file1
+-rw-r--r--  1 gongcunjust  staff  0 Nov 19 08:08 file2

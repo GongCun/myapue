@@ -1,0 +1,9 @@
+Cunteki-MacBook-Air:FIFO gongcunjust$ prog3 < fifo1 &
+[1] 48673
+Cunteki-MacBook-Air:FIFO gongcunjust$ prog1 < infile |tee fifo1 |prog2
+Wed Dec 10 08:44:31 CST 2014
+Wed Dec 10 08:44:31 CST 2014
+Wed Dec 10 08:44:32 CST 2014
+Wed Dec 10 08:44:32 CST 2014
+[1]+  Done                    prog3 < fifo1
+

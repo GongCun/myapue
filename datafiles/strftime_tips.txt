@@ -1,0 +1,13 @@
+tz list: /usr/share/zoneinfo
+
+Cunteki-MacBook-Air:datafiles gongcunjust$ ./strftime2;date
+Sat Nov 29 13:17:32 GMT 2014
+Sat Nov 29 13:17:32 GMT 2014
+Cunteki-MacBook-Air:datafiles gongcunjust$ export TZ=Hongkong
+Cunteki-MacBook-Air:datafiles gongcunjust$ ./strftime2;date
+Sat Nov 29 21:18:11 HKT 2014
+Sat Nov 29 21:18:11 HKT 2014
+Cunteki-MacBook-Air:datafiles gongcunjust$ export TZ=
+Cunteki-MacBook-Air:datafiles gongcunjust$ ./strftime2;date
+Sat Nov 29 13:18:24 UTC 2014
+Sat Nov 29 13:18:24 UTC 2014

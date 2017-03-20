@@ -1,0 +1,6 @@
+# ./lnonblkwr1 </etc/services >temp.file
+# ./lnonblkwr1 </etc/services 2>stderr.out
+# cat stderr.out |grep -c "errno = 35"
+5834
+# cat stderr.out |grep -c "errno = 0"
+499

@@ -1,0 +1,4 @@
+Cunteki-MacBook-Air:advanced_io gongcunjust$ ./pipe_max
+PIPE_BUF = 512
+write error: Resource temporarily unavailable
+pipe_max = 65536

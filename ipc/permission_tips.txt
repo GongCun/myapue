@@ -1,0 +1,15 @@
+Cunteki-MacBook-Air:ipc gongcunjust$ ./permission
+shutdown: NOT super-user
+finished
+Cunteki-MacBook-Air:ipc gongcunjust$ sudo su
+sh-3.2# ./permission
+Shutdown NOW!
+                                                                               
+*** FINAL System shutdown message from gongcunjust@Cunteki-MacBook-Air.local *
+**                                                                            
+System going down IMMEDIATELY                                                  
+                                                                               
+                                                                               
+
+System shutdown time has arrived
+finished

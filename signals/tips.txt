@@ -1,0 +1,14 @@
+# get the core dump frame
+gdb -q msignal2 /cores/core.99164
+
+#
+sed -n '23p' sigaction1.c
+awk 'FNR==23' sigaction1.c
+
+# test signal_inr
+./alarm6
+pid = 99817
+
+kill -USR1 99817
+
+read error: Interrupted system call

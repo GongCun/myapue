@@ -1,0 +1,13 @@
+Cunteki-MacBook-Air:files_directories gongcunjust$ df -m .
+Filesystem   1M-blocks   Used Available Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2    238552 101385    136917    43% 26018566 35050874   43%   /
+Cunteki-MacBook-Air:files_directories gongcunjust$ ./unlink1 &
+Cunteki-MacBook-Air:files_directories gongcunjust$ df -m .
+Filesystem   1M-blocks   Used Available Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2    238552 101385    136917    43% 26018576 35050864   43%   /
+Cunteki-MacBook-Air:files_directories gongcunjust$ done
+df -m .
+Filesystem   1M-blocks   Used Available Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2    238552 100408    137894    43% 25768575 35300865   42%   /
+[1]+  Done                    ./unlink1
+

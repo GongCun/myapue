@@ -1,0 +1,113 @@
+#ifndef _MYAPUE_H_
+#define _MYAPUE_H_
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdarg.h>
+#include <string.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <sys/sem.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <sys/un.h>
+#include <time.h>
+#include <stddef.h>
+#include <termios.h>
+
+#define MAXLINE 4096
+#define FILE_MODE   (S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH)
+#define DIR_MODE    (FILE_MODE | S_IXUSR | S_IXGRP | S_IXOTH)
+#define SVSEM_MODE  (SEM_R | SEM_A | SEM_R>>3 | SEM_R>>6)
+#define LISTENQ 1024
+
+typedef void Sigfunc(int);
+
+void err_sys(const char *, ...) __attribute__((noreturn));
+void err_quit(const char *, ...) __attribute__((noreturn));
+void err_dump(const char *, ...) __attribute__((noreturn));
+void err_dump(const char *, ...) __attribute__((noreturn));
+void err_exit(int, const char *, ...) __attribute__((noreturn));
+void err_ret(const char *, ...); 
+void err_msg(const char *, ...);
+
+void log_open(const char *, int, int);
+void log_ret(const char *, ...);
+void log_sys(const char *, ...);
+void log_msg(const char *, ...);
+void log_quit(const char *, ...);
+
+long open_max(void);
+
+void TELL_WAIT(void); /* parent/child form {sec race_conditions} */
+void TELL_PARENT(pid_t);
+void TELL_CHILD(pid_t);
+void WAIT_PARENT(void);
+void WAIT_CHILD(void);
+
+void PTELL_WAIT(void); /* using fcntl record lock */ 
+void PTELL_PARENT(pid_t);
+void PTELL_CHILD(pid_t);
+void PWAIT_PARENT(void);
+void PWAIT_CHILD(void);
+
+char *path_alloc(size_t *);
+
+void clr_fl(int, int);
+void set_fl(int, int);
+void get_fl(int);
+
+int lock_reg(int, int, int, off_t, int, off_t);
+#define read_lock(fd, offset, whence, len) \
+    lock_reg((fd), F_SETLK, F_RDLCK, (offset), (whence), (len))
+#define readw_lock(fd, offset, whence, len) \
+    lock_reg((fd), F_SETLKW, F_RDLCK, (offset), (whence), (len))
+#define write_lock(fd, offset, whence, len) \
+    lock_reg((fd), F_SETLK, F_WRLCK, (offset), (whence), (len))
+#define writew_lock(fd, offset, whence, len) \
+    lock_reg((fd), F_SETLKW, F_WRLCK, (offset), (whence), (len))
+#define un_lock(fd, offset, whence, len) \
+    lock_reg((fd), F_SETLK, F_UNLCK, (offset), (whence), (len))
+#define lockfile(fd) write_lock((fd), 0, SEEK_SET, 0)
+
+pid_t lock_test(int, int, off_t, int, off_t);
+#define if_read_lockable(fd, offset, whence, len) \
+    (lock_test((fd), F_RDLCK, (offset), (whence), (len)) == 0)
+#define if_write_lockable(fd, offset, whence, len) \
+    (lock_test((fd), F_WRLCK, (offset), (whence), (len)) == 0)
+
+ssize_t readn(int filedes, void *buf, size_t nbytes);
+ssize_t writen(int filedes, void *buf, size_t nbytes);
+void set_ticker(int);
+
+FILE *mpopen(const char *, const char *);
+int mpclose(FILE *);
+ssize_t  readline(int, void *, size_t);
+char *Px_ipc_name(const char *name);
+
+int connect_retry(int, const struct sockaddr *, socklen_t);
+int initserver(int, const struct sockaddr *, socklen_t, int);
+int reinitserver(int, const struct sockaddr *, socklen_t, int);
+
+int daemonize(const char *);
+int Tcp_connect(const char *, const char *);
+int Tcp_listen(const char *, const char *, socklen_t *);
+int Tcp_bind(const char *, const char *, socklen_t *);
+
+Sigfunc *signal_rest(int, Sigfunc);
+
+int s_pipe(int fd[2]);
+int Serv_listen(const char *);
+int Serv_accept(int, uid_t *);
+int Cli_connect(const char *);
+
+int send_fd(int fd, int fd_to_send);
+int send_err(int fd, int status, const char *errmsg);
+int recv_fd(int fd, ssize_t (*userfunc) (int, const void *, size_t));
+
+int tty_cbreak(int);
+int tty_raw(int);
+int tty_reset(int);
+int tty_atexit(int);
+#endif

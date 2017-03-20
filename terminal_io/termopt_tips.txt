@@ -1,0 +1,10 @@
+Cunteki-MacBook-Air:terminal_io gongcunjust$ stty -a
+cflags: cread cs7 -parenb -parodd hupcl -clocal -cstopb -crtscts -dsrflow
+        -dtrflow -mdmbuf
+
+Cunteki-MacBook-Air:terminal_io gongcunjust$ ./termopt01
+7 bits/byte
+
+Cunteki-MacBook-Air:terminal_io gongcunjust$ stty -a
+cflags: cread cs8 -parenb -parodd hupcl -clocal -cstopb -crtscts -dsrflow
+        -dtrflow -mdmbuf

@@ -1,0 +1,9 @@
+Cunteki-MacBook-Air:files_directories gongcunjust$ ls -l | grep -E 'foo|bar'
+-rw-------  1 gongcunjust  staff      0 Nov 15 21:34 bar
+-rw-rw-rw-  1 gongcunjust  staff      0 Nov 15 21:34 foo
+
+# ./chmod1
+
+Cunteki-MacBook-Air:files_directories gongcunjust$ ls -l | grep -E 'foo|bar'
+-rw-r--r--  1 gongcunjust  staff      0 Nov 15 21:34 bar
+-rw-rwSrw-  1 gongcunjust  staff      0 Nov 15 21:34 foo

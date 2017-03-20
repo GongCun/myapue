@@ -1,0 +1,4 @@
+Cunteki-MacBook-Air:terminal_io gongcunjust$ ./ttyname01 </dev/null >/dev/tty 2>/dev/ttys010
+fd 0: not a tty
+fd 1: /dev/tty
+fd 2: /dev/ttys010

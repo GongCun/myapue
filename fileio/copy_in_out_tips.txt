@@ -1,0 +1,41 @@
+Cunteki-MacBook-Air:fileio gongcunjust$ /usr/bin/time -p copy_in_out2 1 <test.file >/dev/null
+real       120.45
+user        20.84
+sys         99.54
+Cunteki-MacBook-Air:fileio gongcunjust$ /usr/bin/time -p copy_in_out2 4096 <test.file >/dev/null
+real         0.05
+user         0.00
+sys          0.04
+Cunteki-MacBook-Air:fileio gongcunjust$ /usr/bin/time -p copy_in_out2 8192 <test.file >/dev/null
+real         0.04
+user         0.00
+sys          0.03
+Cunteki-MacBook-Air:fileio gongcunjust$ /usr/bin/time -p copy_in_out2 16384 <test.file >/dev/null
+real         0.03
+user         0.00
+sys          0.02
+Cunteki-MacBook-Air:fileio gongcunjust$ /usr/bin/time -p copy_in_out2 32768 <test.file >/dev/null
+real         0.02
+user         0.00
+sys          0.02
+Cunteki-MacBook-Air:fileio gongcunjust$ /usr/bin/time -p copy_in_out2 65536 <test.file >/dev/null
+real         0.02
+user         0.00
+sys          0.02
+Cunteki-MacBook-Air:fileio gongcunjust$ /usr/bin/time -p copy_in_out2 131072 <test.file >/dev/null
+real         0.02
+user         0.00
+sys          0.02
+Cunteki-MacBook-Air:fileio gongcunjust$ /usr/bin/time -p copy_in_out2 262144 <test.file >/dev/null
+real         0.02
+user         0.00
+sys          0.02
+Cunteki-MacBook-Air:fileio gongcunjust$ /usr/bin/time -p copy_in_out2 524288 <test.file >/dev/null 
+real         0.02
+user         0.00
+sys          0.02
+Cunteki-MacBook-Air:fileio gongcunjust$ /usr/bin/time -p copy_in_out2 1048572 <test.file >/dev/null 
+read error: Bad address
+real         0.00
+user         0.00
+sys          0.00

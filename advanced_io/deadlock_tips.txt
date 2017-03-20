@@ -1,0 +1,5 @@
+Cunteki-MacBook-Air:advanced_io gongcunjust$ ./deadlock1
+parent: got the lock, byte 1
+child: got the lock, byte 0
+parent: writew_lock error: Resource deadlock avoided << the parent process got the error information
+child: got the lock, byte 1

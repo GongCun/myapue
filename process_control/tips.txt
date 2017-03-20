@@ -1,0 +1,7 @@
+Cunteki-MacBook-Air:process_control gongcunjust$ ./printacct /var/account/acct
+accton     e =      0, chars =       0,       S << super user
+dd         e =      0, chars =      64,         << the second child: execl (fork'd & exec'd)
+acct1      e =    128, chars =       0,         << the parent process 
+acct1      e =    272, chars =       0,   X F   << should fourth or first child
+acct1      e =    384, chars =       0,   X F   << should fourth or first child
+acct1      e =    512, chars =       0,     F   << third child 

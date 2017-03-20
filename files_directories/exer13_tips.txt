@@ -1,0 +1,18 @@
+# before
+-rw-r--r--  1 gongcunjust  staff  0 Nov 24 07:47 tempfile << m
+-rw-r--r--  1 gongcunjust  staff  0 Nov 24 07:41 tempfile << a
+-rw-r--r--  1 gongcunjust  staff  0 Nov 24 07:47 tempfile << c
+
+# after
+-rw-r--r--  1 gongcunjust  staff  0 Nov 24 07:48 tempfile << m
+-rw-r--r--  1 gongcunjust  staff  0 Nov 24 07:41 tempfile << a
+-rw-r--r--  1 gongcunjust  staff  0 Nov 24 07:48 tempfile << c
+
+# only change the access time
+-rw-r--r--  1 gongcunjust  staff  0 Nov 24 07:50 tempfile << m
+-rw-r--r--  1 gongcunjust  staff  0 Nov 24 07:41 tempfile << a
+-rw-r--r--  1 gongcunjust  staff  0 Nov 24 07:50 tempfile << c
+
+-rw-r--r--  1 gongcunjust  staff  0 Nov 24 07:50 tempfile << m
+-rw-r--r--  1 gongcunjust  staff  0 Nov 24 07:51 tempfile << a
+-rw-r--r--  1 gongcunjust  staff  0 Nov 24 07:51 tempfile << c

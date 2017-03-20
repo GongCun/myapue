@@ -1,0 +1,17 @@
+enter eny character
+x
+one line to standard error
+stream = stdin, line buffered, buffer size = 4096
+stream = stdout, line buffered, buffer size = 4096
+stream = stderr, unbuffered, buffer size = 1
+stream = /etc/passwd, fully buffered, buffer size = 4096
+
+Cunteki-MacBook-Air:files_directories gongcunjust$ ./bufferinfo1 </etc/group >std.out 2> std.err
+Cunteki-MacBook-Air:files_directories gongcunjust$ cat std.out
+enter eny character
+stream = stdin, fully buffered, buffer size = 4096
+stream = stdout, fully buffered, buffer size = 4096
+stream = stderr, unbuffered, buffer size = 1
+stream = /etc/passwd, fully buffered, buffer size = 4096
+Cunteki-MacBook-Air:files_directories gongcunjust$ cat std.err
+one line to standard error

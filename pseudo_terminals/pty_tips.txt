@@ -1,0 +1,18 @@
+Cunteki-MacBook-Air:pseudo_terminals gongcunjust$ ttyname
+fd 0: /dev/ttys010
+fd 1: /dev/ttys010
+fd 2: /dev/ttys010
+Cunteki-MacBook-Air:pseudo_terminals gongcunjust$ tty
+/dev/ttys010
+Cunteki-MacBook-Air:pseudo_terminals gongcunjust$ pty ttyname
+fd 0: /dev/ttys002
+fd 1: /dev/ttys002
+fd 2: /dev/ttys002
+Cunteki-MacBook-Air:pseudo_terminals gongcunjust$ who
+gongcunjust console  Dec 28 15:39 
+gongcunjust ttys000  Jan 13 20:49 
+gongcunjust ttys001  Jan 11 16:31 
+gongcunjust ttys007  Dec 28 15:39 
+gongcunjust ttys010  Dec 29 22:09 
+
+pty -i slowout.sh </dev/null > file.out &

@@ -1,0 +1,3 @@
+i=0;while [ $i -lt 1000002 ];do ./exer6_3;((i+=1));done & tail -f ./exer6_count.txt
+tail -10 ./exer6_count.txt # check the last value
+wc -l ./exer6_count.txt

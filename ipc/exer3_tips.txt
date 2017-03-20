@@ -1,0 +1,3 @@
+Cunteki-MacBook-Air:ipc gongcunjust$ ./exer3
+sh: notexistcommand: command not found
+rc = 32512

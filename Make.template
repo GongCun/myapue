@@ -1,0 +1,19 @@
+ROOT=..
+include $(ROOT)/Make.defines
+
+PROGS = test
+
+all:	$(PROGS) clean1
+
+$(PROGS): %: %.o
+	$(CC) $(CFLAGS) $< -o $@ $(LDFLAGS) $(LDLIBS)
+
+clean:
+	rm -vf *.o *~
+
+.PHONY: clean1
+
+clean1:
+	rm -vf *~
+
+include $(ROOT)/Make.libmyapue.inc

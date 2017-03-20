@@ -1,0 +1,14 @@
+# the semset atomic
+Cunteki-MacBook-Air:SystemV gongcunjust$ semops -n x -1 -2 -4
+semop error: Resource temporarily unavailable
+Cunteki-MacBook-Air:SystemV gongcunjust$ semgetvalues x
+semval[0] = 1
+semval[1] = 2
+semval[2] = 3
+
+# success
+Cunteki-MacBook-Air:SystemV gongcunjust$ semops -n x -1 -2 -3
+Cunteki-MacBook-Air:SystemV gongcunjust$ semgetvalues x
+semval[0] = 0
+semval[1] = 0
+semval[2] = 0

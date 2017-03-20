@@ -1,0 +1,20 @@
+# Common make definitions, customized for macos
+
+# Definitions required in all program directories to compile and link
+# C program using gcc
+
+CC=gcc
+COMPILE.c=$(CC) $(CFLAGS) -c
+LINK.c=$(CC) $(CFLAGS) $(LDFLAGS)
+LDFLAGS=
+LDDIR=-L$(ROOT)/lib
+LDLIBS=$(LDDIR) -lmyapue $(EXTRALIBS)
+CFLAGS=-ansi -I$(ROOT)/include -Wall -Wextra -DMACOS -D_DARWIN_C_SOURCE $(EXTRA) -ggdb -pthread
+RANLIB=ranlib
+AR=ar
+AWK=awk
+LIBMYAPUE=$(ROOT)/lib/libmyapue.a
+
+# Common temp files to delete from each directory.
+TEMPFILES=core core.* *.o temp.* *.out
+ 

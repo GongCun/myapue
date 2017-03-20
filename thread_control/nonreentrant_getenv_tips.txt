@@ -1,0 +1,11 @@
+# nonreentry
+SHELL = /bin/bash
+SHELL = Apple_Terminal
+TERM_PROGRAM = Apple_Terminal
+TERM_PROGRAM = /sw/share/man:/Users/gongcunjust/.rvm/rubies/ruby-1.9.3-p392/share/man:/Users/gongcunjust/.rvm/man:/usr/share/man:/usr/local/share/man:/opt/X11/share/man:/sw/lib/perl5/5.12.4/man
+MANPATH = /sw/share/man:/Users/gongcunjust/.rvm/rubies/ruby-1.9.3-p392/share/man:/Users/gongcunjust/.rvm/man:/usr/share/man:/usr/local/share/man:/opt/X11/share/man:/sw/lib/perl5/5.12.4/man
+MANPATH = xterm-256color
+TERM = xterm-256color
+TERM = /Users/gongcunjust/c_program/sys_program/thread_control
+PWD = /Users/gongcunjust/c_program/sys_program/thread_control
+PWD = /Users/gongcunjust/c_program/sys_program/thread_control

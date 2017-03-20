@@ -1,0 +1,21 @@
+# ps -eo pid,ppid,pgid,sess,tpgid,comm
+  PID  PPID  PGID   SESS TPGID COMM
+74725 74424 74725      0 95212 -bash
+95212 74725 95212      0 95212 ps
+
+# ps -eo pid,ppid,pgid,sess,tpgid,comm &
+  PID  PPID  PGID   SESS TPGID COMM
+74725 74424 74725      0 74725 -bash
+95214 74725 95214      0 74725 ps
+
+# ps -eo pid,ppid,pgid,sess,tpgid,comm | cat1
+  PID  PPID  PGID   SESS TPGID COMM
+74725 74424 74725      0 95269 -bash
+95269 74725 95269      0 95269 ps
+95270 74725 95269      0 95269 cat1
+
+# ps -eo pid,ppid,pgid,sess,tpgid,comm |cat1 &
+  PID  PPID  PGID   SESS TPGID COMM
+74725 74424 74725      0 74725 -bash
+95383 74725 95383      0 74725 ps
+95384 74725 95383      0 74725 cat1

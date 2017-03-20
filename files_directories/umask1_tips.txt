@@ -1,0 +1,10 @@
+Cunteki-MacBook-Air:files_directories gongcunjust$ ./umask1
+ls -ltr
+-rw-rw-rw-  1 gongcunjust  staff      0 Nov 15 21:34 foo
+-rw-------  1 gongcunjust  staff      0 Nov 15 21:34 bar
+
+Cunteki-MacBook-Air:files_directories gongcunjust$ umask
+0022
+Cunteki-MacBook-Air:files_directories gongcunjust$ umask -S
+u=rwx,g=rx,o=rx
+

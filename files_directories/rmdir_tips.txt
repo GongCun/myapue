@@ -1,0 +1,2 @@
+Cunteki-MacBook-Air:files_directories gongcunjust$ ./rmdir1
+rmdir: Directory not empty

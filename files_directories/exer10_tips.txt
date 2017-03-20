@@ -1,0 +1,8 @@
+Cunteki-MacBook-Air:files_directories gongcunjust$ ftw4 loop
+loop
+loop/a
+loop/testdir
+loop/testdir/a
+loop/testdir/testdir
+loop/testdir/testdir/ cannot read directory: Too many open files
+

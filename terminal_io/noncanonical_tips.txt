@@ -1,0 +1,22 @@
+Cunteki-MacBook-Air:terminal_io gongcunjust$ ./noncanon01
+Enter raw mode characters, terminate with DELETE
+                                                3
+                                                 33
+                                                   133
+                                                      101
+                                                         33
+                                                           133
+                                                              102
+
+Enter cbreak mode characters, terminate with SIGINT
+signal caught
+
+Cunteki-MacBook-Air:terminal_io gongcunjust$ ./noncanon02
+Enter raw mode characters, terminate with DELETE
+                                                up
+                                                  down
+                                                      left
+                                                          right
+
+Enter cbreak mode characters, terminate with SIGINT
+signal caught

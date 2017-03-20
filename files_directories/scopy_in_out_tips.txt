@@ -1,0 +1,102 @@
+Cunteki-MacBook-Air:files_directories gongcunjust$ echo |dd bs=1 seek=103316351 of=test.file
+1+0 records in
+1+0 records out
+1 bytes transferred in 0.000042 secs (23697 bytes/sec)
+Cunteki-MacBook-Air:files_directories gongcunjust$ ls -ltr test.file
+-rw-r--r--  1 gongcunjust  staff  103316352 Nov 26 21:26 test.file
+
+Cunteki-MacBook-Air:fileio gongcunjust$ /usr/bin/time -p copy_in_out2 1 <test.file >/dev/null
+real       120.45
+user        20.84
+sys         99.54
+
+
+Cunteki-MacBook-Air:files_directories gongcunjust$ /usr/bin/time -p scopy_in_out1 < test.file >/dev/null
+real         1.40
+user         1.36
+sys          0.03
+
+Cunteki-MacBook-Air:fileio gongcunjust$ /usr/bin/time -p copy_in_out2 32768 <test.file >/dev/null
+real         0.02
+user         0.00
+sys          0.02
+
+
+Cunteki-MacBook-Air:files_directories gongcunjust$ /usr/bin/time -p scopy_in_out2 < test.file >/dev/null
+real         0.13
+user         0.09
+sys          0.03
+
+Cunteki-MacBook-Air:files_directories gongcunjust$ /usr/bin/time -p scopy_in_out3 < test.file >/dev/null
+real         1.43
+user         1.40
+sys          0.03
+
+
+Cunteki-MacBook-Air:files_directories gongcunjust$ size -m scopy_in_out3
+Segment __PAGEZERO: 4294967296
+Segment __TEXT: 4096
+	Section __text: 1308
+	Section __stubs: 78
+	Section __stub_helper: 146
+	Section __cstring: 32
+	Section __eh_frame: 408
+	total 1972
+Segment __DATA: 4096
+	Section __nl_symbol_ptr: 16
+	Section __got: 24
+	Section __la_symbol_ptr: 104
+	total 144
+Segment __LINKEDIT: 4096
+total 4294979584
+
+Cunteki-MacBook-Air:files_directories gongcunjust$ size -m scopy_in_out2
+Segment __PAGEZERO: 4294967296
+Segment __TEXT: 4096
+	Section __text: 1324
+	Section __stubs: 72
+	Section __stub_helper: 136
+	Section __cstring: 32
+	Section __eh_frame: 408
+	total 1972
+Segment __DATA: 4096
+	Section __nl_symbol_ptr: 16
+	Section __got: 24
+	Section __la_symbol_ptr: 96
+	total 136
+Segment __LINKEDIT: 4096
+total 4294979584
+
+Cunteki-MacBook-Air:files_directories gongcunjust$ size -m scopy_in_out1
+Segment __PAGEZERO: 4294967296
+Segment __TEXT: 4096
+	Section __text: 1308
+	Section __stubs: 78
+	Section __stub_helper: 146
+	Section __cstring: 32
+	Section __eh_frame: 408
+	total 1972
+Segment __DATA: 4096
+	Section __nl_symbol_ptr: 16
+	Section __got: 24
+	Section __la_symbol_ptr: 104
+	total 144
+Segment __LINKEDIT: 4096
+total 4294979584
+
+Cunteki-MacBook-Air:files_directories gongcunjust$ size -m ../fileio/copy_in_out2
+Segment __PAGEZERO: 4294967296
+Segment __TEXT: 4096
+	Section __text: 1420
+	Section __stubs: 96
+	Section __stub_helper: 176
+	Section __cstring: 52
+	Section __eh_frame: 416
+	total 2160
+Segment __DATA: 4096
+	Section __nl_symbol_ptr: 16
+	Section __got: 16
+	Section __la_symbol_ptr: 128
+	total 160
+Segment __LINKEDIT: 4096
+

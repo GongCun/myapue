@@ -1,0 +1,7 @@
+Password: %1827gcGC
+gongcun@gongcunhost:~$ %hostname
+gongcun@gongcunhost:~$ %date
+gongcun@gongcunhost:~$ %tty
+gongcun@gongcunhost:~$ %who
+gongcun@gongcunhost:~$ %ps
+gongcun@gongcunhost:~$ %exit

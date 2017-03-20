@@ -1,0 +1,8 @@
+Cunteki-MacBook-Air:ipc gongcunjust$ /usr/bin/time -p exer16>/dev/null
+real        37.12
+user        11.32
+sys         41.40
+Cunteki-MacBook-Air:ipc gongcunjust$ /usr/bin/time -p exer17>/dev/null
+real        38.18
+user         5.99
+sys         21.25

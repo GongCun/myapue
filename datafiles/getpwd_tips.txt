@@ -1,0 +1,12 @@
+Cunteki-MacBook-Air:datafiles gongcunjust$ ./getpwd2
+pw_name: gongcunjust
+pw_passwd: ********
+pw_uid: 501
+pw_gid: 20
+pw_gecos: Cun Gong
+pw_dir: /Users/gongcunjust
+pw_shell: /bin/bash
+pw_class: 
+pw_change: 1970 1 1 8:0:0
+pw_expire: 1970 1 1 8:0:0
+

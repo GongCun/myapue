@@ -1,0 +1,16 @@
+# create hole file
+dd if=/dev/zero of=./exer11_source.file count=100 bs=1024
+
+# set rlimit
+ulimit -f 1
+
+# run first
+written bytes 24, expected bytes 100
+
+# run second
+caught SIGXFSZ
+write: File too large
+
+# ls -ls exer11_source.file
+# 200 is block units
+200 -rw-r--r--  1 gongcunjust  staff  102400 Oct 24 07:48 exer11_source.file

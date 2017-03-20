@@ -1,0 +1,5 @@
+Cunteki-MacBook-Air:ipc gongcunjust$ date 1>&2
+Sat Dec 20 09:48:13 CST 2014
+
+Cunteki-MacBook-Air:ipc gongcunjust$ ./exer8
+Sat Dec 20 09:53:23 CST 2014

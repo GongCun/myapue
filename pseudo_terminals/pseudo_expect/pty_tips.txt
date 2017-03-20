@@ -1,0 +1,19 @@
+Cunteki-MacBook-Air:pseudo_expect gongcunjust$ pty -i -d driver -f telnet.txt telnet -l gongcun 192.168.0.104
+Trying 192.168.0.104...
+Connected to 192.168.0.104.
+Escape character is '^]'.
+Password: 
+Last login: Tue Feb 10 19:53:55 CST 2015 from 192.168.0.100 on pts/28
+Welcome to Ubuntu 14.10 (GNU/Linux 3.16.0-29-generic i686)
+
+ * Documentation:  https://help.ubuntu.com/
+
+gongcun@gongcunhost:~$ hostname
+gongcunhost
+gongcun@gongcunhost:~$ tty
+/dev/pts/28
+gongcun@gongcunhost:~$ who
+gongcun  :0           2015-02-10 07:26 (:0)
+gongcun  pts/1        2015-02-10 07:27 (:0)
+gongcun  pts/28       2015-02-10 19:54 (192.168.0.100)
+gongcun@gongcunhost:~$ 

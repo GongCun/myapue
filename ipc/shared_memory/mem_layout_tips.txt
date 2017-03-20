@@ -1,0 +1,10 @@
+Cunteki-MacBook-Air:shared_memory gongcunjust$ ./pr_mem
+array[] from 0x1018e90a0 to 0x1018f2ce0
+stack around 0x7fff5e31765c
+malloc from 0x7faa2b804200 to 0x7faa2b81c8a0
+share memory attached from 0x101939000 to 0x1019516a0d
+
+array[] from 0x1060db0a0 to 0x1060e4ce0
+stack around 0x7fff59b2565c
+malloc from 0x7fef9b804200 to 0x7fef9b81c8a0
+share memory attached from 0x10612f000 to 0x1061476a0d

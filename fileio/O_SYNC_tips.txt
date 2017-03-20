@@ -1,0 +1,22 @@
+Cunteki-MacBook-Air:fileio gongcunjust$ /usr/bin/time -p copy_in_out2 4096 <test.file >/dev/null
+real         0.05
+user         0.00
+sys          0.04
+Cunteki-MacBook-Air:fileio gongcunjust$ /usr/bin/time -p copy_in_out2 4096 <test.file 
+real         6.25
+user         0.01
+sys          3.45
+
+Cunteki-MacBook-Air:fileio gongcunjust$ /usr/bin/time -p copy_in_out4 4096 <test.file 
+write only, synchronous write
+write only, synchronous write
+real         6.63
+user         0.01
+sys          3.97
+Cunteki-MacBook-Air:fileio gongcunjust$ /usr/bin/time -p copy_in_out5 4096 <test.file 
+write only, synchronous write
+write only
+real         6.63
+user         0.01
+sys          3.96
+

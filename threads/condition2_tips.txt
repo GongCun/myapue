@@ -1,0 +1,80 @@
+# first time
+Starting watch_count(): thread 1
+int_count(): thread 2, count = 1, unlocking mutex.
+int_count(): thread 3, count = 2, unlocking mutex.
+int_count(): thread 2, count = 3, unlocking mutex.
+int_count(): thread 3, count = 4, unlocking mutex.
+int_count(): thread 2, count = 5, unlocking mutex.
+int_count(): thread 3, count = 6, unlocking mutex.
+int_count(): thread 2, count = 7, unlocking mutex.
+int_count(): thread 3, count = 8, unlocking mutex.
+int_count(): thread 3, count = 9, unlocking mutex.
+int_count(): thread 2, count = 10, unlocking mutex.
+int_count(): thread 3, count = 11, unlocking mutex.
+inc_count(); thread 2, count = 12, Threshold reached. <<
+int_count(): thread 2, count = 12, unlocking mutex.
+watch_count(): thread 1 Condition signal received.
+watch_count(): thread 1 count now = 137.
+int_count(): thread 3, count = 138, unlocking mutex.
+int_count(): thread 2, count = 139, unlocking mutex.
+int_count(): thread 3, count = 140, unlocking mutex.
+int_count(): thread 2, count = 141, unlocking mutex.
+int_count(): thread 3, count = 142, unlocking mutex.
+int_count(): thread 2, count = 143, unlocking mutex.
+int_count(): thread 3, count = 144, unlocking mutex.
+int_count(): thread 2, count = 145, unlocking mutex.
+Main(): Waited on 3 threads. Done.
+
+# second time
+Starting watch_count(): thread 1
+int_count(): thread 2, count = 1, unlocking mutex.
+int_count(): thread 3, count = 2, unlocking mutex.
+int_count(): thread 2, count = 3, unlocking mutex.
+int_count(): thread 3, count = 4, unlocking mutex.
+int_count(): thread 2, count = 5, unlocking mutex.
+int_count(): thread 3, count = 6, unlocking mutex.
+int_count(): thread 3, count = 7, unlocking mutex.
+int_count(): thread 2, count = 8, unlocking mutex.
+int_count(): thread 3, count = 9, unlocking mutex.
+int_count(): thread 2, count = 10, unlocking mutex.
+int_count(): thread 3, count = 11, unlocking mutex.
+inc_count(); thread 2, count = 12, Threshold reached. <<
+int_count(): thread 2, count = 12, unlocking mutex.
+watch_count(): thread 1 Condition signal received.
+watch_count(): thread 1 count now = 137.
+int_count(): thread 3, count = 138, unlocking mutex.
+int_count(): thread 2, count = 139, unlocking mutex.
+int_count(): thread 3, count = 140, unlocking mutex.
+int_count(): thread 2, count = 141, unlocking mutex.
+int_count(): thread 3, count = 142, unlocking mutex.
+int_count(): thread 2, count = 143, unlocking mutex.
+int_count(): thread 3, count = 144, unlocking mutex.
+int_count(): thread 2, count = 145, unlocking mutex.
+Main(): Waited on 3 threads. Done.
+
+# third time
+Starting watch_count(): thread 1
+int_count(): thread 2, count = 1, unlocking mutex.
+int_count(): thread 3, count = 2, unlocking mutex.
+int_count(): thread 2, count = 3, unlocking mutex.
+int_count(): thread 3, count = 4, unlocking mutex.
+int_count(): thread 2, count = 5, unlocking mutex.
+int_count(): thread 3, count = 6, unlocking mutex.
+int_count(): thread 2, count = 7, unlocking mutex.
+int_count(): thread 3, count = 8, unlocking mutex.
+int_count(): thread 2, count = 9, unlocking mutex.
+int_count(): thread 3, count = 10, unlocking mutex.
+int_count(): thread 3, count = 11, unlocking mutex.
+inc_count(); thread 2, count = 12, Threshold reached. <<
+int_count(): thread 2, count = 12, unlocking mutex.
+watch_count(): thread 1 Condition signal received.
+watch_count(): thread 1 count now = 137.
+int_count(): thread 2, count = 138, unlocking mutex.
+int_count(): thread 3, count = 139, unlocking mutex.
+int_count(): thread 2, count = 140, unlocking mutex.
+int_count(): thread 3, count = 141, unlocking mutex.
+int_count(): thread 2, count = 142, unlocking mutex.
+int_count(): thread 3, count = 143, unlocking mutex.
+int_count(): thread 2, count = 144, unlocking mutex.
+int_count(): thread 3, count = 145, unlocking mutex.
+Main(): Waited on 3 threads. Done.

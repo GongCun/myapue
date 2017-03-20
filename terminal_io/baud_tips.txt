@@ -1,0 +1,20 @@
+Cunteki-MacBook-Air:terminal_io gongcunjust$ stty -a
+speed 9600 baud; 44 rows; 136 columns;
+
+Cunteki-MacBook-Air:terminal_io gongcunjust$ baud01
+in speed = 9600
+out speed = 9600
+in speed = 38400
+out speed = 9600
+
+Cunteki-MacBook-Air:terminal_io gongcunjust$ stty -a
+ispeed 38400 baud; ospeed 9600 baud; 44 rows; 136 columns;
+
+Cunteki-MacBook-Air:terminal_io gongcunjust$ ./baud02
+in speed = 38400
+out speed = 9600
+in speed = 38400
+out speed = 38400
+Cunteki-MacBook-Air:terminal_io gongcunjust$ stty -a
+speed 38400 baud; 44 rows; 136 columns;
+

@@ -1,0 +1,3 @@
+Cunteki-MacBook-Air:files_directories gongcunjust$ ./pr_type1 foo bar
+foo: regular
+bar: regular

@@ -1,0 +1,29 @@
+Cunteki-MacBook-Air:advanced_io gongcunjust$ ./select1 ./temp.fifo /dev/tty 5
+no input after 5 seconds
+no input after 5 seconds
+no input after 5 seconds
+no input after 5 seconds
+./temp.fifo:
+Tue Dec  2 21:54:26 CST 2014
+
+./temp.fifo:
+Tue Dec  2 21:54:26 CST 2014
+
+./temp.fifo:
+
+
+/dev/tty:
+
+
+hello world
+/dev/tty:
+hello world
+
+welcome
+/dev/tty:
+welcome
+
+no input after 5 seconds
+caught SIGHUP
+select: Interrupted system call
+

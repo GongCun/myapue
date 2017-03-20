@@ -1,0 +1,2 @@
+# ./6_1 & (sleep 1; ps -o pid,ppid,comm,args,state)
+./6_1 & (sleep 1; ps -j)

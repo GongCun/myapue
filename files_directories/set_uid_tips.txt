@@ -1,0 +1,21 @@
+# ./set_uid_test
+5704
+
+# ps -fu gongcunjust | grep [5]704
+  501  5704  5126   0  8:50PM ttys001    0:00.00 ./set_uid_test
+
+# ps -fu root | grep [5]704
+nothing
+
+# chown root set_uid_test
+# chmod u+x set_uid_test
+# set_uid_test
+5732
+
+# ps -fu gongcunjust | grep [5]732
+    0  5732  5126   0  8:54PM ttys001    0:00.00 set_uid_test
+
+# ps -fu root | grep [5]732
+nothing
+
+so the process's if belong to gongcunjust, but have root privilege.

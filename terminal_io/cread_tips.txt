@@ -1,0 +1,10 @@
+Cunteki-MacBook-Air:terminal_io gongcunjust$ tty
+/dev/ttys007
+Cunteki-MacBook-Air:terminal_io gongcunjust$ stty -cread
+Cunteki-MacBook-Air:terminal_io gongcunjust$ stty -a | grep cread
+cflags: -cread cs8 -parenb -parodd hupcl -clocal -cstopb -crtscts
+Cunteki-MacBook-Air:terminal_io gongcunjust$ cread01 /dev/ttys007
+Cunteki-MacBook-Air:terminal_io gongcunjust$ stty -a | grep cread
+cflags: cread cs8 -parenb -parodd hupcl -clocal -cstopb -crtscts -dsrflow
+
+# only could change the control terminal #

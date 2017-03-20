@@ -1,0 +1,13 @@
+13) SIGPIPE
+
+./exer4
+child pid = 68042
+...
+
+<kill 68042>
+
+...
+1 2 <enter>
+
+echo $?
+141 (128 + 13)

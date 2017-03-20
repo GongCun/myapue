@@ -1,0 +1,8 @@
+Cunteki-MacBook-Air:advanced_io gongcunjust$ /usr/bin/time -p ./rdwrv4 8000000
+real        15.77
+user         0.91
+sys         14.81
+Cunteki-MacBook-Air:advanced_io gongcunjust$ /usr/bin/time -p ./rdwrv5 8000000
+real        14.03
+user         1.53
+sys         12.49

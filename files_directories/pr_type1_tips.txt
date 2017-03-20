@@ -1,0 +1,10 @@
+# ln -sv Makefile temp.link
+temp.link -> Makefile
+
+# pr_type1 /dev /dev/tty /dev/disk0 /etc/passwd ./temp.link ./fifo.1827
+/dev: directory
+/dev/tty: character special
+/dev/disk0: block special
+/etc/passwd: regular
+./temp.link: symbolic link
+./fifo.1827: fifo

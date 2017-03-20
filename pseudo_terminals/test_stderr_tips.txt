@@ -1,0 +1,4 @@
+Cunteki-MacBook-Air:pseudo_terminals gongcunjust$ pty stderr.sh |tee typepty
+Thu Jan 15 22:36:32 CST 2015
+Cunteki-MacBook-Air:pseudo_terminals gongcunjust$ cat typepty
+Thu Jan 15 22:36:32 CST 2015

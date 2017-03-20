@@ -1,0 +1,37 @@
+#reset
+Interrupt set to control-C (^C).
+
+Cunteki-MacBook-Air:terminal_io gongcunjust$ save=`stty -g`
+Cunteki-MacBook-Air:terminal_io gongcunjust$ change01
+Cunteki-MacBook-Air:terminal_io gongcunjust$ stty -a
+speed 9600 baud; 44 rows; 136 columns;
+lflags: icanon isig iexten echo echoe echok echoke -echonl echoctl
+        -echoprt -altwerase -noflsh -tostop -flusho pendin -nokerninfo
+        -extproc
+iflags: -istrip icrnl -inlcr -igncr ixon -ixoff -ixany imaxbel -iutf8
+        -ignbrk brkint -inpck ignpar -parmrk
+oflags: opost onlcr oxtabs onocr onlret
+cflags: cread cs8 -parenb -parodd hupcl -clocal -cstopb -crtscts -dsrflow
+        -dtrflow -mdmbuf
+cchars: discard = ^O; dsusp = ^Y; eof = ^B; eol = <undef>;
+        eol2 = <undef>; erase = ^?; intr = <undef>; kill = ^U;
+        lnext = ^V; min = 1; quit = ^\; reprint = ^R; start = ^Q;
+        status = ^T; stop = ^S; susp = ^Z; time = 0; werase = ^W;
+
+Cunteki-MacBook-Air:terminal_io gongcunjust$ stty $save
+
+Cunteki-MacBook-Air:terminal_io gongcunjust$ stty -a
+speed 9600 baud; 44 rows; 136 columns;
+lflags: icanon isig iexten echo echoe echok echoke -echonl echoctl
+        -echoprt -altwerase -noflsh -tostop -flusho pendin -nokerninfo
+        -extproc
+iflags: -istrip icrnl -inlcr -igncr ixon -ixoff -ixany imaxbel -iutf8
+        -ignbrk brkint -inpck ignpar -parmrk
+oflags: opost onlcr oxtabs onocr onlret
+cflags: cread cs8 -parenb -parodd hupcl -clocal -cstopb -crtscts -dsrflow
+        -dtrflow -mdmbuf
+cchars: discard = ^O; dsusp = ^Y; eof = ^D; eol = <undef>;
+        eol2 = <undef>; erase = ^?; intr = ^C; kill = ^U; lnext = ^V;
+        min = 1; quit = ^\; reprint = ^R; start = ^Q; status = ^T;
+        stop = ^S; susp = ^Z; time = 0; werase = ^W;
+

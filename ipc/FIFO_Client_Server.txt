@@ -1,0 +1,6 @@
+# daemon server "/Users/gongcunjust/c_program/sys_program/ipc"
+# tail -f /var/log/system.log
+# client
+
+# Terminate Daemon Process
+# kill -TERM 52147 

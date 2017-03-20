@@ -1,0 +1,13 @@
+# ls -l
+-r--------  1 root         wheel     23 Nov 16 20:42 root.file
+
+# access1 root.file
+access error for root.file: Permission denied
+open error for root.file: Permission denied
+
+sh-3.2# chmod u+s access1
+sh-3.2# chown root access1
+
+# access1 root.file
+access error for root.file: Permission denied
+open for reading OK

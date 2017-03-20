@@ -1,0 +1,7 @@
+# change the stack size
+# max is 65532 kbytes
+bash: ulimit -s hard
+zsh: ulimit -s unlimited
+
+# "long int" is 8 bytes
+# "char" is 1 byte
